@@ -1,0 +1,12 @@
+<div class="row">
+    <div *ngFor="let product of products" class="col d-flex flex-wrap m-2">
+        <p-card  header="Simple Card" [style]="{'width': '15rem','height': '25rem', 'margin-bottom': '2em'}">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://www.primefaces.org/primeng/assets/showcase/images/usercard.png">
+            </ng-template>
+            <p>{{product.name}}</p>
+            <p>Price: {{ product.unitPrice }}</p>
+            <p>Stok: {{ product.unitsInStock }}</p>
+        </p-card>
+    </div>
+</div>
